@@ -53,13 +53,16 @@
             </label>
         </fieldset>
         
-        <label >
-            Tarefa concluída:</label>
+        <label >Tarefa concluída:</label>
            <div class="form-group">
             <input type="checkbox" name="concluida" value="1"  <?php echo ($tarefa['concluida'] == 1)
             ? 'checked'
                 :'';
             ?>/>
+           </div>
+           <label >Lembrete Por Email:</label>
+           <div class="form-group">
+               <input type="checkbox" name="lembrete" value="1">
            </div>
 
             <div class="text-right">

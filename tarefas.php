@@ -1,7 +1,11 @@
 <?php
 session_start();
-include "apoio/banco.php";
-include "apoio/ajudantes.php";
+include 'config.php';
+include "banco.php";
+include "ajudantes.php";
+include 'Classes/Tarefas.php';
+
+$tarefas = new Tarefas($mysqli);
 
 
 
@@ -53,7 +57,11 @@ if (tem_post()) {
         $tarefa['concluida'] = 0;
     }
     if (! $tem_erros) {
-        gravar_tarefa($conexao, $tarefa);
+        $tarefas->gravar_tarefa( $tarefa);
+       if (isset($_POST['lembrete']) && $_POSTÇ['lembrete'] == '1') {
+           enviar_email($tarefa);
+       }
+
     header("Location:tarefas.php");
     die();
     }
@@ -62,7 +70,7 @@ if (tem_post()) {
 
 }
 
-$lista_tarefas = buscar_tarefas($conexao);
+$tarefas->buscar_tarefas();
 
 
 $tarefa = array(

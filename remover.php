@@ -5,7 +5,8 @@
  * Date: 05/03/18
  * Time: 16:03
  */
-include "apoio/banco.php";
+include 'config.php';
+include "banco.php";
 
-remover_tarefa($conexao,$_GET['id']);
+remover_tarefa($mysqli,$_GET['id']);
 header('Location:tarefas.php');

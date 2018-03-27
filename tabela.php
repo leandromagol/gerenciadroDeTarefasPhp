@@ -8,9 +8,12 @@
         <th>Concluída</th>
         <th>Opcoes</th>
     </tr>
-    <?php foreach ($lista_tarefas as $tarefa) : ?>
+    <?php foreach ($tarefas->tarefas as $tarefa) : ?>
         <tr>
-            <td><?php echo $tarefa['nome']; ?> </td>
+            <td>
+                <a href="tarefa.php?id=<?php echo $tarefa['id'];?>">
+                    <?php echo $tarefa['nome']; ?> </td>
+                </a>
             <td><?php echo $tarefa['descricao']; ?> </td>
             <td><?php echo traduz_data_para_exibir($tarefa['prazo']); ?> </td>
             <td><?php echo traduz_prioridade($tarefa['prioridade']); ?> </td>
