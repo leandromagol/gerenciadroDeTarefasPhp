@@ -17,5 +17,5 @@
 	<?php echo traduz_prioridade($tarefa['prioridade']); ?>
 </p>
 <?php if (count($anexos)>0): ?>
-	<p><strong>Atencao!</strong>Esta tarefa contem anexos</p>
+	<p><strong>Atencao!</strong>Esta tarefas contem anexos</p>
 <?php endif ?>
