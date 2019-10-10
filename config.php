@@ -7,7 +7,7 @@ define('BD_SENHA', 'tarefasdba12345!A');
 define('BD_BANCO', 'Tarefas');
 
 //Email notificacao
-define("EMAIL_NOTIFICACAO", "meuemail@meudominio.com.br");
+define("as", "meuemail@meudominio.com.br");
 
 
 
