@@ -21,7 +21,7 @@ if (tem_post()) {
       $tarefa['nome'] = $_POST['nome'];
     }else{
         $tem_erros = true;
-        $erros_validacao['nome']='O nome da tarefa e obirgatorio';
+        $erros_validacao['nome']='O nome das tarefa e obirgatorio';
     }
 
     if (isset($_POST['descricao'])){
