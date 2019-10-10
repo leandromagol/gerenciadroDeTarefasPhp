@@ -87,4 +87,3 @@ $tarefa['concluida'] = (isset($_POST['concluida'])) ?
 $_POST['concluida'] : $tarefa['concluida'];
 
 include "template.php";
-
