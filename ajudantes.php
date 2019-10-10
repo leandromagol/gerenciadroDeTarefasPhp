@@ -14,7 +14,7 @@ function traduz_prioridade($codigo){
             $prioridade = 'Baixa';
             break;
         case 2 :
-            $prioridade = 'Media';
+            $prioridade = 'Mediana';
             break;
         case 3 :
             $prioridade = 'Alta';
