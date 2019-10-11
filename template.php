@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Gerenciador de Tarefas</title>
+    <title>TESTE de Tarefas</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
 </head>
 <body>
